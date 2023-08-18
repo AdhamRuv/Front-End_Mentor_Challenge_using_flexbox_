@@ -1,0 +1,359 @@
+:root {
+    /* ### Primary */
+
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* ### Neutral */
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+body {
+    margin: 0;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.page section, header, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+/* header */
+.page header {
+    margin-top: 100px;
+    background-image: url(images/bg-header-desktop.png);
+}
+.page header div:first-child {
+    margin-bottom: 30px;
+    background-image: url(images/bg-header-mobile.png);
+}
+.page header div:nth-child(2) {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.page header div:nth-child(3) {
+    font-size: 15.2px;
+    font-weight: lighter;
+    opacity: .3;
+    line-height: 1.6;
+    margin: 25px 0px;
+}
+.page header .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+.page header .buttons input:first-child {
+    background-color: var(--Strong-Cyan);
+    color: white;
+    padding: 15px 80px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px -22.5px 0px -20px hsl(171, 100%, 33%) inset;
+    cursor: pointer;
+}
+.page header .buttons input:last-child {
+    background-color: var(--Light-Blue);
+    color: white;
+    padding: 15px 80px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px -22.5px 0px -20px hsl(233, 100%, 65%) inset;
+    cursor: pointer;
+}
+
+/* Section-1 */
+
+.page section:nth-of-type(1) .head-1 div:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.page section:nth-of-type(1) .head-1 div:nth-child(2) {
+    font-size: 16px;
+    font-weight: lighter;
+    opacity: .3;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+.page section:nth-of-type(1) .container-1 .c-left img {
+    margin-top: 50px;
+    width: 320px;
+    height: 250px;
+}
+.c-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    margin-top: 50px;
+}
+.page section:nth-of-type(1) .container-1 .c-right div div:first-child {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.page section:nth-of-type(1) .container-1 .c-right div div:last-child {
+    font-weight: lighter;
+    opacity: .3;
+    margin-top: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Section-2 */
+
+.page section:nth-of-type(2) .head-2 div:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.page section:nth-of-type(2) .head-2 div:last-child {
+    font-size: 16.4px;
+    font-weight: lighter;
+    opacity: .3;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+.page section:nth-of-type(2) div:last-child img {
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+}
+
+/* Section-3 */
+
+.page section:nth-of-type(3) .head-3 {
+    margin-bottom: 100px;
+}
+.page section:nth-of-type(3) .head-3 div:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.page section:nth-of-type(3) .head-3 div:last-child {
+    font-size: 17px;
+    font-weight: lighter;
+    opacity: .3;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+.page section:nth-of-type(3) .container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+}
+.page section:nth-of-type(3) .container-3 div div:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.page section:nth-of-type(3) .container-3 div div:last-child {
+    font-size: 16.2px;
+    font-weight: lighter;
+    opacity: .3;
+    line-height: 1.6;
+    word-wrap: break-word;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Section-4 */
+.page section:nth-of-type(4) {
+    flex-basis: 475px;
+}
+.page section:nth-of-type(4) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+/* Section-5 */
+
+
+.page section:nth-of-type(5) .head-5 div:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--Dark-Grayish-Blue);
+}
+.page section:nth-of-type(5) .head-5 div:last-child {
+    font-size: 17px;
+    font-weight: lighter;
+    opacity: .3;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+.page section:nth-of-type(5) .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+.page section:nth-of-type(5) .buttons input:first-child {
+    background-color: var(--Strong-Cyan);
+    color: white;
+    padding: 15px 80px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px -22.5px 0px -20px hsl(171, 100%, 33%) inset;
+    cursor: pointer;
+}
+.page section:nth-of-type(5) .buttons input:last-child {
+    background-color: var(--Light-Blue);
+    color: white;
+    padding: 15px 80px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px -22.5px 0px -20px hsl(233, 100%, 65%) inset;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.page footer {
+    background-color: var(--Grayish-Blue);
+    height: 365px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 500;
+    font-size: 16px;
+    margin: 100px 0 0 0;
+}
+.page footer div:first-child img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.page footer .footer-container {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    height: 62.5%;
+    text-align: center;
+}
+.page footer .logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+@media (min-width: 580px) {
+    .page {
+        max-width: 1400px;
+    }
+    .page header {
+        background-image: url(images/bg-header-mobile.png);
+    }
+    .page header div:nth-child(3) {
+        width: 45%;
+    }
+    .page header .buttons {
+        height: auto;
+        width: 625px;
+        flex-direction: row;
+    }
+    .container-1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container-1 .c-left {
+        width: 50%;
+    }
+    .container-1 .c-right {
+        width: 40%;
+    }
+    .page section:nth-of-type(1) .container-1 .c-right div {
+        text-align: left;
+    }
+    .page section:nth-of-type(1) .container-1 .c-left img {
+        width: 135%;
+        height: 80%;
+        position: relative;
+        right: 150px;
+    }
+    .page section:nth-of-type(1) .head-1 div:last-child {
+        width: 55%;
+    }
+    .page section .head div:nth-child(2) {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .page section:nth-of-type(3) .head-3 div:last-child {
+        width: 100%;
+    }
+    .page section:nth-of-type(3) .container-3 {
+        flex-direction: row;
+        flex-basis: 0%;
+    }
+    .page section:nth-of-type(3) .container-3 div {
+        width: calc(100% / 3);
+        margin: 0 auto;
+    }
+    .page section:nth-of-type(4) {
+        flex-basis: auto;
+    }
+    .page section:nth-of-type(4) div {
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .page section:nth-of-type(5) .buttons{
+        height: auto;
+        width: 625px;
+        flex-direction: row;
+    }
+    .page footer {
+        flex-direction: row;
+        align-items: center;
+        height: 100px;
+        margin: 0;
+    }
+    .page footer .footer-container {
+        flex-direction: row;
+        align-content: space-between;
+        align-items:  flex-start;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: initial;
+    }
+    .page footer .footer-container div {
+        width: calc(100% / 3);
+        text-align: left;
+    }
+}
