@@ -273,7 +273,7 @@ body {
 
 @media (min-width: 580px) {
     .page {
-        max-width: 1400px;
+        max-width: 100%;
     }
     .page header {
         background-image: url(images/bg-header-mobile.png);
